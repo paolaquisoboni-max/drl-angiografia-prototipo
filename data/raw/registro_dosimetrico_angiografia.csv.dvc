@@ -1,0 +1,5 @@
+outs:
+- md5: 8cfa712fe9cca7a785bf9858b1149864
+  size: 33625
+  hash: md5
+  path: registro_dosimetrico_angiografia.csv
