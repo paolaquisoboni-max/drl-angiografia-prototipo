@@ -99,7 +99,7 @@ print("\n[5/8] ENTRENANDO MODELOS...")
 
 modelos = {
     'Logistic_Regression': LogisticRegression(max_iter=1500, random_state=42),
-    'Random_Forest': RandomForestClassifier(n_estimators=100, max_depth=15, random_state=42),
+    'Random_Forest': RandomForestClassifier(n_estimators=60, max_depth=15, random_state=42),
     'Gradient_Boosting': GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=10, random_state=42)
 }
 
