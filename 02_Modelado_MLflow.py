@@ -12,6 +12,11 @@ Febrero 2026
 
 import pandas as pd
 import numpy as np
+
+import matplotlib
+matplotlib.use('Agg')
+
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
@@ -93,9 +98,9 @@ print("✓ Tracking URI: file:./mlruns")
 print("\n[5/8] ENTRENANDO MODELOS...")
 
 modelos = {
-    'Logistic_Regression': LogisticRegression(max_iter=1000, random_state=42),
-    'Random_Forest': RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42),
-    'Gradient_Boosting': GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=5, random_state=42)
+    'Logistic_Regression': LogisticRegression(max_iter=1500, random_state=42),
+    'Random_Forest': RandomForestClassifier(n_estimators=60, max_depth=15, random_state=42),
+    'Gradient_Boosting': GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=10, random_state=42)
 }
 
 resultados = []
